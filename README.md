@@ -29,12 +29,15 @@ This project implements basic monitoring using Amazon CloudWatch and SNS to auto
 - Terraform
 - AWS CLI
 
-## Prerequisites
+### Deployed Environment
 
-- AWS account with CloudWatch and SNS permissions
-- AWS CLI v2 installed and configured
-- Terraform >= 1.6.0 installed
-- An email address for receiving notifications
+Three CloudWatch alarms watching three different layers of a typical web application:
+
+- **EC2 CPU alarm** — fires if any server is working too hard (above 80% CPU for 10 minutes)
+- **ALB Response Time alarm** — fires if the app starts responding slowly to users (above 1 second for 15 minutes)
+- **RDS Connections alarm** — fires if the database is getting overwhelmed (above 80 connections for 10 minutes)
+
+All three alarms send notifications through a single **SNS Topic**, which delivers emails to your inbox. A **CloudWatch Dashboard** was also created to visualise all three metrics in one place.
 
 ## Terraform Deployment 
 This project was deployed entirely using Terraform. All AWS resources were defined as code, planned, and applied without manually clicking through the AWS Console.
