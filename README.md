@@ -1,4 +1,4 @@
-# Basic AWS Resources Monitoring with CloudWatch Alarms
+# AWS Resources Monitoring with CloudWatch Alarms
 <img width="800" height="400" alt="Nexus-feat-img2" src="https://github.com/user-attachments/assets/88bf90a3-b051-4844-bc5e-a258d1258749" />
 
 
