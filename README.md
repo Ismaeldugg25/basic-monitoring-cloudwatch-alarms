@@ -1,5 +1,5 @@
 # Basic AWS Resources Monitoring with CloudWatch Alarms
-<img width="624" height="282" alt="0308b86c1986f514cc7ac98748f9c85c_kix g4x8cy4yvhun" src="https://github.com/user-attachments/assets/ba0fb580-c7b4-4d14-9fcd-9eecda219baf" />
+<img width="800" height="400" alt="Nexus-feat-img2" src="https://github.com/user-attachments/assets/88bf90a3-b051-4844-bc5e-a258d1258749" />
 
 
 
