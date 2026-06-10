@@ -1,0 +1,11 @@
+# Terraform state files - never push these
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl
+
+# Your personal values - contains your email
+terraform.tfvars
+
+# Mac junk
+.DS_Store
