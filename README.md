@@ -1,9 +1,17 @@
 # AWS Resources Monitoring with CloudWatch Alarms
 <img width="800" height="400" alt="Nexus-feat-img2" src="https://github.com/user-attachments/assets/88bf90a3-b051-4844-bc5e-a258d1258749" />
 
+Built and deployed a complete monitoring system on AWS using Terraform. Fully automated, no manual clicking.
 
+The system watches 3 layers of a typical web application 24/7 and sends email alerts the moment something goes wrong:
 
-Basic monitoring system using Amazon CloudWatch Alarms and SNS for automated infrastructure notifications across EC2, RDS, and ALB.
+- EC2 CPU spiking above 80% 
+- ALB response time exceeding 1 second 
+- RDS database connections over 80
+
+When a threshold is breached → CloudWatch fires → SNS delivers the email. When it recovers → another email. No more finding out about problems 3 hours later.
+
+Built entirely with Terraform and AWS. 
 
 ## Problem
 
